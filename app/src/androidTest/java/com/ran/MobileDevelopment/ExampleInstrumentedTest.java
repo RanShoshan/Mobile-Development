@@ -1,4 +1,4 @@
-package com.ran.calculator;
+package com.ran.MobileDevelopment;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#96a0ab"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".CalculatorActivity"
+    tools:layout_editor_absoluteY="73dp">
 
     <Button
         android:id="@+id/bt9"
@@ -14,11 +14,10 @@
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
+        android:background="@drawable/numbers"
         android:text="9"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bt6"
-        app:layout_constraintEnd_toStartOf="@+id/bta"
+        app:layout_constraintBottom_toTopOf="@+id/bt5"
         app:layout_constraintStart_toEndOf="@+id/bt8" />
 
     <Button
@@ -27,10 +26,10 @@
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
+        android:background="@drawable/numbers"
         android:text="8"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bt5"
+        app:layout_constraintBottom_toTopOf="@+id/bt4"
         app:layout_constraintEnd_toStartOf="@+id/bt9"
         app:layout_constraintStart_toEndOf="@+id/bt7" />
 
@@ -40,10 +39,10 @@
         android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:background="@drawable/numbers"
         android:text="7"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bt4"
+        app:layout_constraintBottom_toTopOf="@+id/bt3"
         app:layout_constraintEnd_toStartOf="@+id/bt8"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,12 +52,14 @@
         android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_action_button"
         android:text="*"
         android:textSize="25dp"
-        android:background="@drawable/rounded_action_button"
         app:layout_constraintBottom_toTopOf="@+id/bts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt6" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/bt9" />
 
     <Button
         android:id="@+id/bt6"
@@ -66,11 +67,11 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/bt9"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/numbers"
         android:text="6"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bt3"
-        app:layout_constraintEnd_toStartOf="@+id/btm"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt5" />
 
     <Button
@@ -79,9 +80,9 @@
         android:layout_height="70dp"
         android:layout_alignStart="@+id/bt8"
         android:layout_alignTop="@+id/bt6"
+        android:background="@drawable/numbers"
         android:text="5"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
         app:layout_constraintBottom_toTopOf="@+id/bt2"
         app:layout_constraintEnd_toStartOf="@+id/bt6"
         app:layout_constraintStart_toEndOf="@+id/bt4" />
@@ -90,12 +91,12 @@
         android:id="@+id/bt4"
         android:layout_width="95dp"
         android:layout_height="70dp"
+        android:background="@drawable/numbers"
         android:text="4"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
         app:layout_constraintBottom_toTopOf="@+id/bt1"
         app:layout_constraintEnd_toStartOf="@+id/bt5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/bt3" />
 
     <Button
         android:id="@+id/btd"
@@ -103,48 +104,48 @@
         android:layout_height="70dp"
         android:layout_alignBottom="@+id/bt6"
         android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_action_button"
         android:text="/"
         android:textSize="25dp"
-        android:background="@drawable/rounded_action_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bte" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/bt3"
         android:layout_width="95dp"
         android:layout_height="70dp"
+        android:background="@drawable/numbers"
         android:tag="num"
         android:text="3"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bte"
-        app:layout_constraintEnd_toStartOf="@+id/bts"
-        app:layout_constraintStart_toEndOf="@+id/bt2" />
+        app:layout_constraintBottom_toTopOf="@+id/bt0"
+        app:layout_constraintEnd_toStartOf="@+id/bt4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bt2"
         android:layout_width="95dp"
         android:layout_height="70dp"
+        android:background="@drawable/numbers"
         android:tag="num"
         android:text="2"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/bt0"
-        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt1" />
 
     <Button
         android:id="@+id/bt1"
         android:layout_width="95dp"
         android:layout_height="70dp"
+        android:background="@drawable/numbers"
         android:tag="num"
         android:text="1"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
-        app:layout_constraintBottom_toTopOf="@+id/btc"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/bt2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/bt0" />
 
     <Button
         android:id="@+id/bta"
@@ -152,12 +153,12 @@
         android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/bt3"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_action_button"
         android:text="+"
         android:textSize="25dp"
-        android:background="@drawable/rounded_action_button"
         app:layout_constraintBottom_toTopOf="@+id/btm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt9" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btc"
@@ -165,12 +166,18 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/bt9"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/equal_clear"
         android:text="CLEAR"
         android:textSize="15dp"
-        android:background="@drawable/equal_clear"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/bt0"
@@ -178,12 +185,12 @@
         android:layout_height="70dp"
         android:layout_alignStart="@+id/bt8"
         android:layout_alignTop="@+id/btc"
+        android:background="@drawable/numbers"
         android:text="0"
         android:textSize="25dp"
-        android:background="@drawable/numbers"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bte"
-        app:layout_constraintStart_toEndOf="@+id/btc" />
+        app:layout_constraintEnd_toStartOf="@+id/bt1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bte"
@@ -191,12 +198,18 @@
         android:layout_height="70dp"
         android:layout_alignStart="@+id/bt7"
         android:layout_alignTop="@+id/btc"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/equal_clear"
         android:text="="
         android:textSize="25dp"
-        android:background="@drawable/equal_clear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btd"
-        app:layout_constraintStart_toEndOf="@+id/bt0" />
+        app:layout_constraintBottom_toTopOf="@+id/btc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/bts"
@@ -204,12 +217,12 @@
         android:layout_height="70dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/btc"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_action_button"
         android:text="-"
         android:textSize="25dp"
-        android:background="@drawable/rounded_action_button"
         app:layout_constraintBottom_toTopOf="@+id/btd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt3" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/info"
@@ -217,17 +230,14 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/numbers"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result"
@@ -235,16 +245,14 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="1dp"
         android:background="@drawable/numbers"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintTop_toBottomOf="@+id/info" />
 
 </android.support.constraint.ConstraintLayout>

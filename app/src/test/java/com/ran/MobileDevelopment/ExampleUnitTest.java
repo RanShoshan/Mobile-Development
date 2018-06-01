@@ -1,4 +1,4 @@
-package com.ran.calculator;
+package com.ran.MobileDevelopment;
 
 import org.junit.Test;
 
